@@ -23,9 +23,9 @@ int main() {
 	for (int wagon = 1; wagon <= wagons; wagon++) {
 		for (int door = 1; door <= doors; door++) {
 			cout << "Вагон " << wagon << " - дверь " << door << "\n";
+			allDoors++; 
 		}
 	}
-	allDoors = wagons * doors;
 	cout << "Общее количество дверей: " << allDoors;
 	return 0;
 }
